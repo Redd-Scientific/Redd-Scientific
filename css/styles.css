@@ -1,0 +1,270 @@
+/* Colours! 
+
+lt purple #f0c5ff;
+dk purrple #4c2759;
+lt grey #fbf9f5;
+gold #e1b000;
+dark blue #0e0c1b;
+tealy blue #3492a9;
+
+*/
+
+body {
+	color:#333;
+	background-color:#FFFDEA;	
+}
+
+header {
+	width:100%;
+	height:280px;
+	overflow: auto;
+	background:url(../img/pittsburgh.jpg) top center no-repeat;
+	background-size:cover;
+	position:relative;
+}
+
+header span {
+	display:block;
+	width:50%;
+	padding-left:1.75%;
+	margin-top:2em;
+	background:black;
+}
+
+.wrapper, footer {
+	width:95%;
+	margin:auto;
+}
+
+section {
+	width: 100%;
+}
+
+aside {
+	width: 100%;
+	padding: 0 2% 2em 2%;
+	margin-top: 2.25em;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*----------------
+=nav 
+------------------*/
+.nav {
+	width:100%;
+	background:#131126;
+}
+
+.nav ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.nav ul li {
+	float:left;
+	display:block;
+	padding: 1em 2%;
+	margin-right:1%;
+	width:150px;
+	}
+
+.nav li a {
+	display:block;
+	width:100%;
+	height:100%;
+	color:#fff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.nav ul a:hover {
+	color:#f0c5ff;
+}
+
+footer {
+	margin-top:4em;
+	border-top:1px solid #a9a9a9;
+	color:#868686;
+}
+
+/* ---------------------------------------------------------------------
+=Typography
+
+using scale http://modularscale.com/scale/?px1=16&px2=30&ra1=1.5&ra2=0
+
+------------------------------------------------------------------------- */
+
+body {
+	font-size:100%; /*16px base */
+	font-family: Georgia, Times, "Times New Roman", serif;
+	line-height: 1.5; /* from our scale */
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#0e0c1b;	
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:700;
+}
+
+.mega {
+	font-size: 5.063em; /* 81 / 16 = 5.063 */
+	margin-bottom: 0.296em;
+}
+
+h1,
+.alpha {
+	font-size: 3.375em; /* 54 / 16 = 3.375 */
+	margin: 0.444em 0;
+	color:white;
+}
+
+h2,
+.beta {
+	font-size: 2.813em; /* 45 / 16 = 2.813 */
+	margin-bottom: 0.571rem;
+	color:#4c2759;
+}
+
+h3,
+.gamma {
+	font-size: 2.25em; /* 36 / 16 = 2.25 */
+	margin-bottom: 0.666em;
+	color:#3492a9;
+}
+
+h4,
+.delta {
+	font-size: 1.875em; /* 30 / 16 = 1.875 */
+	margin-bottom: 0.8em;
+}
+
+h5,
+.epsilon {
+	font-size: 1.5em; /* 24 / 16 = 1.5 */
+	margin-bottom: 1em; 
+}
+
+h6,
+.zeta {
+	font-size: 1em; /* 16 = 16 × 1 */
+	margin-bottom: 1.5em;
+}
+
+
+p {
+	margin: 1em 0;
+}
+
+blockquote {
+	color:#e1b000;
+	font-size: 1.875em; 
+	font-style: italic;
+}
+
+
+/* links */
+a {
+	color:#3492a9;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#e1b000;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#3c00ba;	
+}
+
+
+
+/* images */
+
+.photo, img {width: 100%; max-width:100%;}
+
+
+
+@media only screen and (max-width: 400px) {
+	h1 {font-size:2.25em;}
+	header span {width:70%;}
+}
+
+
+@media only screen and (min-width: 600px) {
+	body {font-size: 110%;}
+}
+
+
+
+@media only screen and (min-width: 850px) {
+	section {
+		width:55%;
+		float:left;
+		margin-right:4%;
+	}
+	
+	aside {
+		width:36%;
+		float:left;
+	}
+	
+	
+}
+
+
+a.menu-link {
+   position:absolute;
+   bottom:0px;
+   right:0px;
+   display: block;
+   padding: 1em;
+   background:#131126;
+   color:white;
+}
+nav {
+	clear: both;
+	-webkit-transition: all 0.3s ease-out;  
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.js nav {
+	overflow: hidden;
+	max-height: 0;
+}
+nav.active {
+	max-height: 15em;
+}
+
+
+@media screen and (min-width: 30em) {
+	a.menu-link {
+	   display: none;
+	}
+	.js nav {
+		max-height: none;
+	}
+	nav ul {
+		margin: 0 0 0 -0.25em;
+		border: 0;
+	}
+	
+	nav  li {
+		display: inline-block;
+		margin: 0 0.25em;
+	}
+	nav li a {
+		border: 0;
+	}
+}
+
+
+
