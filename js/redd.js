@@ -15,6 +15,7 @@ test();
 /*******
 Testing KO
 *******/
+var betChips = new BetChips();
 
 function BetChips()
 {
@@ -23,14 +24,11 @@ function BetChips()
 	this.fifteen = ko.observable(1);
 	this.twenty = ko.observable(1);
 	this.betAmt = ko.observable(0);
-	
-	//var self = this;
-	this.addChips = function(data,event)
-	{
-		var chip = event.target.classList.contains("Chip1")? (five--, betAmt += 5,console.log("betAmt" + betAmt))
-				  :event.target.classList.contains("Chip2")? (ten--, betAmt += 10)
-				  :betAmt += 0;
-	}
 }
 
-ko.applyBindings(new BetChips());
+ko.applyBindings(betChips);
+
+function addChips()
+{
+	console.log(arguments);
+}
