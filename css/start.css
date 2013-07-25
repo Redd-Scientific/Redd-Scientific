@@ -8,6 +8,10 @@
 	margin-top:30px;
 	padding:25px 50px 10px 100px;
 	box-shadow: 10px 10px 5px #888888;
+	background:url("images/Art Assets/Casino Table.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	padding-top:0%;
 }
 
 .buttons
