@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/start.css">
        <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
     </head>
     <body>
@@ -22,15 +23,23 @@
         <!-- Add your site or application content here -->
         <div id="question">
 			<h2>
-				Where is Hogwarts School of Witchcraft and Wizardy located?
+				Welcome!
 			</h2>
 		</div>
-		<div id="answer1" class="answer"><h4 class="ans">Scotland</h4></div>
-		<div id="answer2" class="answer"><h4 class="ans">Brazil</h4></div>
-		<div id="answer3" class="answer"><h4 class="ans">India</h4></div>
-		<div id="answer4" class="answer"><h4 class="ans">USA</h4></div>
+		<div class="instructions">
+			<ul>
+				<li>You start with $100 worth of chips</li>
+				<li>Based on your confidence in the subject, place your bet</li>
+				<li>All bets are double or nothing</li>
+				<li>If you answer the question in the category correctly, you will receive twice your bet. Otherwise you will receive nothing.</li>
+			</ul>
+		</div>
+		<div class="buttons">
+			<input type="button" id="startButton" value="START" onclick="location.href='placeBet.html'">
+		</div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/redd.js"></script>
         <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->
         <!--<script src="js/plugins.js"></script>-->
         <!--<script src="js/main.js"></script>-->

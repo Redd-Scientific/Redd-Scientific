@@ -1,0 +1,23 @@
+.instructions
+{
+	border:2px solid red;
+	border-radius:25px;
+	width: 75%;
+	height: 200px;
+	margin-left:100px;
+	margin-top:30px;
+	padding:25px 50px 10px 100px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.buttons
+{
+	padding:25px 25px 25px 25px; 
+	text-align:center;
+}
+
+#startButton
+{
+	height:50px;
+	width: 100px;
+}

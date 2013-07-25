@@ -1,0 +1,34 @@
+[
+{
+	"category":"Harry Potter",
+	"questionID":"HP1",
+	"question":"What is Harry Potter's favorite dish?",
+	"answerA":"Treacle Tart",
+	"answerB":"Pumpkin Pie",
+	"answerC":"Chocolate Pastry",
+	"answerD":"Jamun",
+	"correct":"A"
+},
+
+{
+	"category":"Lord of the Rings",
+	"questionID":"LOTR1",
+	"question":"Where should Frodo take the ring?",
+	"answerA":"Las Vegas",
+	"answerB":"North Pole",
+	"answerC":"Mount Doom",
+	"answerD":"Australia",
+	"correct":"C"
+},
+
+{
+	"category":"Harry Potter",
+	"questionID":"HP2",
+	"question":"Which house is Harry in?",
+	"answerA":"Slytherin",
+	"answerB":"Ravenclaw",
+	"answerC":"Hufflepuff",
+	"answerD":"Gryffindor",
+	"correct":"D"
+}	
+]

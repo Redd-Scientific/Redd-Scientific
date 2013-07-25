@@ -1,0 +1,1 @@
+console.log("Bet Amount: " + REDD.bet.amount);

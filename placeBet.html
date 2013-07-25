@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/placeBet.css">
+       <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+		<div id="pageTitle" class="centered">
+			<h4>
+				Place your bet for
+			</h4>
+		</div>
+		
+		<div id="question" class="centered">
+			<h2>
+				Harry Potter
+			</h2>
+		</div>
+		<div id="betAmtDivID" class="betAmtDiv centered">
+			<div id="betAmt"><p>Bet: <span id="betAmtNumber" class="amt" data-bind="text: betAmt"></span></p></div>
+			<div id="goBtn"><input class="buttons" type="button" value="GO" onclick="location.href='question.html'"></input></div>
+		</div>
+		<div id="chipsDivID" class="chipsDiv">
+			<div id="chip1" class="first chips centered Chip1" data-bind="click:addChips"><p class="chip Chip1">5</p></div>
+			<div id="chip2" class="chips centered Chip2" data-bind="click:addChips"><p class="chip Chip2">10</p></div>
+			<div id="chip3" class="chips centered Chip3" data-bind="click:addChips"><p class="chip Chip3">15</p></div>
+			<div id="chip4" class="chips centered Chip4" data-bind="click:addChips"><p class="chip Chip4">20</p></div>
+		</div>
+		<div class="chipsDiv">
+			<div class="first vals centered">
+				<div class="valDiv"><p>x<span id="five" class="amt" data-bind="text: five"></span></p></div>
+				<div class="reduceBtnDiv"><button>V</button></div>
+			</div>
+			<div class="vals centered">
+				<div class="valDiv"><p>x<span id="ten" class="amt" data-bind="text: ten"></span></p></div>
+				<div class="reduceBtnDiv"><button>V</button></div>
+			</div>
+			<div class="vals centered">
+				<div class="valDiv"><p>x<span id="fifteen" class="amt" data-bind="text: fifteen"></span></p></div>
+				<div class="reduceBtnDiv"><button>V</button></div>
+			</div>
+			<div class="vals centered">
+				<div class="valDiv"><p>x<span id="twenty" class="amt" data-bind="text: twenty"></span></p></div>
+				<div class="reduceBtnDiv"><button>V</button></div>
+			</div>
+		</div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-min.js"></script>
+		<script src="js/redd.js"></script>
+		<script src="js/placeBet.js"></script>
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->
+        <!--<script src="js/plugins.js"></script>-->
+        <!--<script src="js/main.js"></script>-->
+    </body>
+</html>
