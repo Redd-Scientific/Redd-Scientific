@@ -8,10 +8,16 @@
     z-index: -1;
 }
 
+
 .stretch {
     margin: auto;
     height:100%;
 	width:100%;
+}
+.chipstretch{
+margin: auto;
+height:100%;
+width:40%;
 }
 
 .amt
@@ -22,14 +28,14 @@
 
 .chips
 {
-	border:2px solid red;
+	/*border:2px solid red;*/
 	border-radius:25px;
 	width: 20%;
-	height: 50px;
+	height: 100px;
 	margin-left:20px;
 	margin-top:0px;
 	float:left;
-	box-shadow: 10px 10px 5px #888888;
+	/*box-shadow: 10px 10px 5px #888888;*/
 }
 
 .vals
@@ -76,7 +82,8 @@
 	/*height: 10px;*/
 	margin-left:20px;
 	margin-top:10px;
-	float:left;
+	position: relative;
+	float:center;
 }
 
 .valDiv

@@ -25,9 +25,9 @@
 			<img src="images/Art Assets/Casino Table.png" class="stretch" alt="" />
 		</div>
 		<div id="pageTitle" class="centered">
-			<h4>
+			<h3>
 				Place your bet for
-			</h4>
+			</h3>
 		</div>
 		
 		<div id="question" class="centered">
@@ -39,28 +39,33 @@
 			<div id="betAmt"><p>Bet: <span id="betAmtNumber" class="amt" data-bind="text: betAmt()"></span></p></div>
 			<div id="goBtn"><input class="buttons" type="button" value="GO" onclick="location.href='question.html'"></input></div>
 		</div>
+
 		<div id="chipsDivID" class="chipsDiv">
-			<div id="chip1" class="first chips centered Chip1" data-bind="click:addChips"><p class="chip Chip1">5</p></div>
-			<div id="chip2" class="chips centered Chip2" data-bind="click:addChips"><p class="chip Chip2">10</p></div>
-			<div id="chip3" class="chips centered Chip3" data-bind="click:addChips"><p class="chip Chip3">15</p></div>
-			<div id="chip4" class="chips centered Chip4" data-bind="click:addChips"><p class="chip Chip4">20</p></div>
+			<div id="chip1" class="first chips centered" >
+			<img src="images/Art Assets/Chip-25.png" class="chipstretch Chip1" data-bind="click:addChips" alt="" /></div>
+			<div id="chip2" class="chips centered" >
+			<img src="images/Art Assets/Chip-50.png" class="chipstretch Chip2" data-bind="click:addChips" alt="" /></div>
+			<div id="chip3" class="chips centered" >
+			<img src="images/Art Assets/Chip-75.png" class="chipstretch Chip3" data-bind="click:addChips" alt="" /></div>
+			<div id="chip4" class="chips centered" >
+			<img src="images/Art Assets/Chip-100.png" class="chipstretch Chip4" data-bind="click:addChips" alt="" /></div>
 		</div>
 		<div class="chipsDiv">
 			<div class="first vals centered">
 				<div class="valDiv"><p>x<span id="five" class="amt" data-bind="text: five()"></span></p></div>
-				<div class="reduceBtnDiv"><button class = "Chip1" data-bind="click:removeChips">V</button></div>
+				<div class="reduceBtnDiv"><button class = "Chip1" data-bind="click:removeChips">-</button></div>
 			</div>
 			<div class="vals centered">
 				<div class="valDiv"><p>x<span id="ten" class="amt" data-bind="text: ten()"></span></p></div>
-				<div class="reduceBtnDiv"><button class = "Chip2" data-bind="click:removeChips">V</button></div>
+				<div class="reduceBtnDiv"><button class = "Chip2" data-bind="click:removeChips">-</button></div>
 			</div>
 			<div class="vals centered">
 				<div class="valDiv"><p>x<span id="fif3teen" class="amt" data-bind="text: fifteen()"></span></p></div>
-				<div class="reduceBtnDiv"><button class = "Chip3" data-bind="click:removeChips">V</button></div>
+				<div class="reduceBtnDiv"><button class = "Chip3" data-bind="click:removeChips">-</button></div>
 			</div>
 			<div class="vals centered">
 				<div class="valDiv"><p>x<span id="twenty" class="amt" data-bind="text: twenty()"></span></p></div>
-				<div class="reduceBtnDiv"><button class = "Chip4" data-bind="click:removeChips">V</button></div>
+				<div class="reduceBtnDiv"><button class = "Chip4" data-bind="click:removeChips">-</button></div>
 			</div>
 		</div>
 
