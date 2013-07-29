@@ -17,6 +17,7 @@ Testing KO
 *******/
 var betChips =  
 {
+	//TODO: use arrays
 	five : ko.observable(6),
 	ten : ko.observable(2),
 	fifteen : ko.observable(2),
